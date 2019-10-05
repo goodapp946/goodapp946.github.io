@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://goodapp946.github.io</id>
     <title>GoodApp-Notes</title>
-    <updated>2019-10-05T01:21:21.305Z</updated>
+    <updated>2019-10-05T10:16:51.392Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://goodapp946.github.io"/>
     <link rel="self" href="https://goodapp946.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>Experience sharing</subtitle>
     <logo>https://goodapp946.github.io/images/avatar.png</logo>
     <icon>https://goodapp946.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, GoodApp-Notes</rights>

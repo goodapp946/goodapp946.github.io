@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Windows|Aria2+PanDownload网页版实现网盘不限速下载 | GoodApp-Notes</title>
+<meta name="description" content="&lt;h2&gt;Experience sharing&lt;/h2&gt;">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://goodapp946.github.io/favicon.ico?v=1570274419918">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://goodapp946.github.io/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://goodapp946.github.io">
+        <img src="https://goodapp946.github.io/images/avatar.png?v=1570274419918" class="site-logo">
+        <h1 class="site-title">GoodApp-Notes</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      <h2>Experience sharing</h2>
+    </div>
+    <div class="site-footer">
+      <h3>友情链接：<a href="https://goodapp946.top" target="_blank">GoodApp946</a></h3><br><br>
+Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://goodapp946.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Windows|Aria2+PanDownload网页版实现网盘不限速下载</h2>
+            <div class="post-date">2019-10-05</div>
+            
+              <div class="feature-container" style="background-image: url('https://goodapp946.github.io/post-images/windowsoraria2pandownload-wang-ye-ban-shi-xian-wang-pan-bu-xian-su-xia-zai.jpg')">
+              </div>
+            
+            <div class="post-content">
+              <!-- wp:paragraph -->
+<p>前几天xiaoC给大家分享过一个不错的网盘下载工具——<a rel="noreferrer noopener" href="https://www.goodapp946.top/archives/1007" target="_blank">ENFI下载器&nbsp;</a>它可以真正实现网盘的不限速下载，感兴趣的朋友可以下载试试！</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><a rel="noreferrer noopener" aria-label="ENFI下载器|真正做到不限速下载网盘文件的神器，支持Mac、windows、安卓三大平台！ （在新窗口打开）" href="https://www.goodapp946.top/archives/1007" target="_blank"><strong>ENFI下载器|真正做到不限速下载网盘文件的神器，支持Mac、windows、安卓三大平台！ </strong></a></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>最近xiaoC又发现了一个不错的不限速下载网盘文件的方法：Aria2+PanDownload网页版也可以实现网盘不限速下载，而且也是完全免费的，速度也还可以！</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p> 不了解PanDownload网页版的朋友请查看这篇文章</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><a rel="noreferrer noopener" aria-label="以后网页中就可以直接下载百度网盘文件了，非常方便！（在新窗口打开）" href="https://www.goodapp946.top/archives/748" target="_blank"><strong>以后网页中就可以直接下载百度网盘文件了，非常方便！</strong></a></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><strong>具体安装使用教程如下：</strong></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>首先退出杀毒软件，下载安装好Aria2超级懒人包，电脑小白不建议更改安装路径默认就好；</p>
+<!-- /wp:paragraph -->
+<!-- wp:image {"id":1056} -->
+<figure class="wp-block-image"><img src="https://www.goodapp946.top/wp-content/uploads/2019/10/QQ%E6%88%AA%E5%9B%BE20191005113209.png" alt="" class="wp-image-1056"/></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph -->
+<p>安装完成后，在Aria2安装路径中找到Aria2.conf的文件右键在打开方式中选择用记事本打开；</p>
+<!-- /wp:paragraph -->
+<!-- wp:image {"id":1057} -->
+<figure class="wp-block-image"><img src="https://www.goodapp946.top/wp-content/uploads/2019/10/QQ%E6%88%AA%E5%9B%BE20191005113501.png" alt="" class="wp-image-1057"/></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph -->
+<p>打开后dir=后面的路径就是下载路径，默认为C:\Program Files\Aria2\Download，修改请注意格式，记得保存； 电脑小白不建议更改下载路径默认就好； </p>
+<!-- /wp:paragraph -->
+<!-- wp:image {"id":1058} -->
+<figure class="wp-block-image"><img src="https://www.goodapp946.top/wp-content/uploads/2019/10/QQ%E6%88%AA%E5%9B%BE20191005113609.png" alt="" class="wp-image-1058"/></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph -->
+<p>如果你上一步修改了下载路径就必须在 Aria2安装路径中找到 重启服务.bat的文件右键以管理员身份运行，运行后会自动退出；如果你没有修改下载路径请忽略这一步；</p>
+<!-- /wp:paragraph -->
+<!-- wp:image {"id":1059} -->
+<figure class="wp-block-image"><img src="https://www.goodapp946.top/wp-content/uploads/2019/10/QQ%E6%88%AA%E5%9B%BE20191005113650.png" alt="" class="wp-image-1059"/></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph -->
+<p>注意：Aria2超级懒人包安装完成后默认下载路径为C:\Program Files\Aria2\Download，但是在 Aria2 目录下并没有 Download 的文件夹，所以你需要新建一个 Download 的文件夹存放下载文件，若没有这个文件夹下载也会继续但在下载完成后你会发现找不到下载的文件，如果你修改了下载路径记得查看是否有这个最终的下载文件夹；</p>
+<!-- /wp:paragraph -->
+<!-- wp:image {"id":1060} -->
+<figure class="wp-block-image"><img src="https://www.goodapp946.top/wp-content/uploads/2019/10/QQ%E6%88%AA%E5%9B%BE20191005114140.png" alt="" class="wp-image-1060"/></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph -->
+<p>Aria2超级懒人包安装完成后会自动在桌面创建一个AriaNg的图标，打开后可以查看 Aria2 的状态是否连接；其他的参数设置也没有什么修改的；</p>
+<!-- /wp:paragraph -->
+<!-- wp:image {"id":1061} -->
+<figure class="wp-block-image"><img src="https://www.goodapp946.top/wp-content/uploads/2019/10/QQ%E6%88%AA%E5%9B%BE20191005115150.png?imageView2/1/w/1024/h/616/q/75#" alt="" class="wp-image-1061"/></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph -->
+<p>  PanDownload网页版打开需要下载文件点击 使用Aria2下载；</p>
+<!-- /wp:paragraph -->
+<!-- wp:image {"id":1062} -->
+<figure class="wp-block-image"><img src="https://www.goodapp946.top/wp-content/uploads/2019/10/QQ%E6%88%AA%E5%9B%BE20191005115353.png?imageView2/1/w/1024/h/514/q/75#" alt="" class="wp-image-1062"/></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph -->
+<p>Aria2 RPC配置信息，主机： localhost，端口：6800，密钥：123456 ，和下载路径； （默认为C:\Program Files\Aria2\Download ）</p>
+<!-- /wp:paragraph -->
+<!-- wp:image {"id":1063} -->
+<figure class="wp-block-image"><img src="https://www.goodapp946.top/wp-content/uploads/2019/10/QQ%E6%88%AA%E5%9B%BE20191005115438.png" alt="" class="wp-image-1063"/></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph -->
+<p>添加下载后，会自动打开AriaNg开始下载，下载速度也非常不错也是不限速下载；</p>
+<!-- /wp:paragraph -->
+<!-- wp:image {"id":1064} -->
+<figure class="wp-block-image"><img src="https://www.goodapp946.top/wp-content/uploads/2019/10/Animation.gif?imageView2/1/w/1024/h/616/q/75#" alt="" class="wp-image-1064"/></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph -->
+<p>
+<p>好了，其它的功能就不细说了，有兴趣的就下载了解一下，今天的干货就介绍到这里吧，我们下期再见！</p>
+</p>
+<!-- /wp:paragraph -->
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+<!-- wp:xintheme-blocks/contrast {"backgroundColor":"#0693e3"} -->
+<div class="wp-block-xintheme-blocks-contrast" ><div class="wp-block-xintheme-blocks-contrast-content" multline="p"><p><strong>下载地址</strong></p><p><a rel="noreferrer noopener" aria-label="讯乐云（在新窗口打开）" href="https://pan.xunlew.com/s18643" target="_blank"><strong>讯乐云</strong></a>      ~~~        <a rel="noreferrer noopener" aria-label="百度网盘（在新窗口打开）" href="https://pan.baidu.com/s/1xnE-uEaJOlW2ZeDOloiy8Q " target="_blank"><strong>百度网盘</strong></a> （提取码：8t1n ) </p></div></div>
+<!-- /wp:xintheme-blocks/contrast -->
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://goodapp946.github.io/tag/IsTk5uODo" class="tag">
+                    网盘下载
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://goodapp946.github.io/post/hello-gridea">
+                  <h3 class="post-title">
+                    Hello Gridea
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>
